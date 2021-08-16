@@ -64,3 +64,9 @@ CREATE TABLE related(
 -- COPY photos FROM '/Users/smile.ran/HackReactor/Week8/products_api_data/photos.csv' DELIMITER ',' CSV HEADER;
 -- COPY skus FROM '/Users/smile.ran/HackReactor/Week8/products_api_data/skus.csv' DELIMITER ',' CSV HEADER;
 -- COPY related FROM '/Users/smile.ran/HackReactor/Week8/products_api_data/related.csv' DELIMITER ',' CSV HEADER;
+-- CREATE INDEX on skus (style_id);
+-- CREATE INDEX on photos (style_id);
+-- CREATE INDEX on styles (product_id);
+-- CREATE INDEX on styles (id);
+-- CREATE INDEX on products (id);
+-- CREATE INDEX on features (product_id);
