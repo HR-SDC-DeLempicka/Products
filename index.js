@@ -1,6 +1,6 @@
 require('newrelic');
 const express = require('express');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 const compression = require('compression');
 //const productQuery = require('./database/index');
 const database =require('./database');
@@ -13,7 +13,7 @@ const PORT = 3000;
 app.set('port', PORT);
 
 app.use(compression());
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 app.use(express.json());
 //app.use(express.urlencoded({ extended: true }));
 //app.use('/', router);
@@ -84,7 +84,7 @@ productQueryFunc = (req, res) => {
     });
 
 };
-app.get('/products/:product_id', productQueryFuncOpt)
+app.get('/products/:product_id', productQueryFunc)
 
 myStylesFunc = (req, res) => {
   var stylesObj = {};
