@@ -4,7 +4,7 @@
 -- show all users: \du
 -- quit current session: \q
 -- rejoin an instance: psql postgres -U smile.ran
--- create database: CREATE DATABASE db;
+-- create database: CREATE DATABASE sdc;
 -- list db: \l
 -- sudo -u postgres psql < schema.sql
 -- select a database: \c testdb;
