@@ -10,6 +10,9 @@ const app = express();
 module.exports.app = app;
 
 const PORT = 3000;
+
+const {loaderioKey} = require('./database/index.js');
+
 app.set('port', PORT);
 
 app.use(compression());
@@ -18,6 +21,10 @@ app.use(express.json());
 //app.use(express.urlencoded({ extended: true }));
 //app.use('/', router);
 //app.use(express.static(`${__dirname}/../client/dist`));
+
+app.get (`/${loaderioKey}`, (req, res) => {
+  res.send(loaderioKey);
+});
 
 app.get('/products', (req, res) => {
   database.getAll()

@@ -1,12 +1,15 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: 'smile.ran',
-  host: 'localhost',
+  user: 'postgres',
+  host: '18.191.40.40',
   database: 'sdc',
-  password: '',
+  password: 'password',
   port: 5432,
 })
+var loaderioKey = loaderio-409ce5461dcd80ace97e7dfd130dff56;
+
+module.exports = {loaderioKey}
 
 pool.connect()
     .then(() => { console.log('connected to postgres') })

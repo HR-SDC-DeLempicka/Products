@@ -70,3 +70,4 @@ CREATE TABLE related(
 -- CREATE INDEX on styles (id);
 -- CREATE INDEX on products (id);
 -- CREATE INDEX on features (product_id);
+-- scp -i /Users/smile.ran/HackReactor/Week8/key/SDC_DB.pem /Users/smile.ran/HackReactor/Week8/products_api_data/photos.csv ubuntu@18.191.40.40:/home/ubuntu
