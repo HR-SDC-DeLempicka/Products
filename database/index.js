@@ -7,9 +7,7 @@ const pool = new Pool({
   password: 'password',
   port: 5432,
 })
-var loaderioKey = loaderio-409ce5461dcd80ace97e7dfd130dff56;
-
-module.exports = {loaderioKey}
+var loaderioKey = 'loaderio-409ce5461dcd80ace97e7dfd130dff56';
 
 pool.connect()
     .then(() => { console.log('connected to postgres') })
@@ -208,4 +206,5 @@ module.exports = {
   stylesQueryOpt: stylesQueryOpt,
   stylesSkuQuery: stylesSkuQuery,
   productFeatureQuery: productFeatureQuery,
+  loaderioKey,
 }
